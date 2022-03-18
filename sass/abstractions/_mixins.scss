@@ -1,0 +1,53 @@
+/* Compatible all browsers */
+@mixin browsers($option, $value) {
+  -webkit-#{$option}:$value;
+  -khtml-#{$option}:$value;
+  -moz-#{$option}:$value;
+  -ms-#{$option}:$value;
+  -o-#{$option}:$value;
+  #{$option}:$value;
+}
+/* keyframes Compatible all browsers */
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+@include keyframes(up-down) {
+  0%,13.2%,33%,52.8%,66%{
+    transform:translate(-35%,0)
+  }
+  26.4%{
+    transform:translate(-35%,-30px)
+  }
+  39.6%{
+    transform:translate(-35%,-15px)
+  } 
+}  
+@include keyframes(up-down-last) {
+  0%,13.2%,33%,52.8%,66%{
+    transform:translate(-35%,0)
+  }
+  26.4%{
+    transform:translate(-35%,-30px)
+  }
+  39.6%{
+    transform:translate(-35%,-15px)
+  }  
+}  
+@mixin font($family,$size,$style:normal,$weight:normal,$line-height:normal) { 
+  font-family: $family;
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $line-height;
+}  

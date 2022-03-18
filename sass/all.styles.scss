@@ -1,0 +1,30 @@
+// Import variables, abstractions, base styles and components.
+// Uncomment the next lines and adjust them to your needs.
+//@import "variables/{YOUR FILE NAME HERE}";
+//@import "abstractions/{YOUR FILE NAME HERE}";
+//@import "base/{YOUR FILE NAME HERE}";
+//@import "components/{YOUR FILE NAME HERE}";
+
+
+// Import variables, abstractions, base styles and components.
+$susy: (
+  columns: 12,
+  gutter-position: inside,
+  math: fluid,
+  output: float,
+  flow: rtl,
+);
+
+@import "compass";
+@import "susy";
+@import "breakpoint";
+//abstractions
+@import "abstractions/**/*";
+//variables 
+@import "variables/**/*";
+//base
+@import "base/**/*";
+//components                   
+@import "components/**/*";    
+//layouts                  
+@import "layouts/**/*";    

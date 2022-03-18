@@ -1,0 +1,360 @@
+//
+// Global structure configurations
+//
+
+body {
+  i {
+    @include font(devebug,inherit,normal,normal,normal); 
+    padding-right: 15px;  
+    vertical-align: -1px;
+    &.linkedin {
+      &:before {
+        content: '\e902';
+      }
+    }
+    &.mail {
+      &:before {
+        content: '\e904';
+      }
+    }
+    &.phone {
+      &:before {
+        content: '\e905';
+      }
+    }
+    &.twitter {
+      &:before {
+        content: '\e906';  
+      } 
+    }
+  }
+  #code {
+    width: 520px;
+    height: 527px;
+    @include breakpoint(max-width 1311px){
+      width: 475px;
+      height: 482px;
+    }
+    @include breakpoint(max-width 517px){ 
+      @include browsers(transform, translate(70%));    
+    }
+    @include breakpoint(518px 675px){
+      width: 100%;
+    }
+  }
+  #contact {
+    width: 540px;
+    height: 518px; 
+    @include breakpoint(max-width 1311px){
+      width: 430px;
+      height: 413px;
+    }  
+    @include breakpoint(max-width 517px){
+      @include browsers(transform, translate(-60%));  
+    }
+    @include breakpoint(518px 675px){
+      width: 100%;
+    }    
+  }
+  #cv {
+    width: 435px; 
+    height: 600px;  
+    @include breakpoint(max-width 1311px){
+      width: 400px;
+      height: 553px;
+    }
+    @include breakpoint(max-width 517px){   
+      @include browsers(transform, translate(-45%));   
+    }   
+    @include breakpoint(518px 675px){
+      width: 100%;
+    }    
+  }
+  #person {
+    width: 270px;
+    height: 700px; 
+    @include breakpoint(max-width 1311px){
+      width: 220px;
+      height: 570px;        
+    }
+    @include breakpoint(518px 675px){
+      width: 100%;
+    }      
+  }
+  h1 {
+    @include font('Quicksand-Bold',18vw,normal,normal,20vw);  
+    @include breakpoint(max-width 517px){ 
+      @include font('Quicksand-Bold',25vw,normal,normal,41vw);   
+    }
+  }
+  h2 {
+    @include font('Quicksand-Bold',6.9vw,normal,normal,7.9vw); 
+    padding-bottom: 70px;
+    @include breakpoint(518px 675px){
+      padding-bottom: 35px;
+    }
+    @include breakpoint(max-width 517px){
+      @include font('Quicksand-Bold',8.9vw,normal,normal,11.9vw); 
+    }
+  }
+  h3 {
+    @include font('sinkinSans-Light',4.5vw,normal,normal,9vw); 
+    @include breakpoint(max-width 517px){
+      @include font('sinkinSans-Light',8.5vw,normal,normal,11vw);
+    }       
+  } 
+  h4 {
+    @include font('sinkinSans-Light',2.5vw,normal,normal,5vw);     
+    @include breakpoint(max-width 517px){
+      @include font('sinkinSans-Light',5.5vw,normal,normal,12vw);
+    }    
+  }
+  h5 {
+    @include font('QuicksandDash-Regular',2.5vw,normal,200,6vw);  
+    @include breakpoint(max-width 517px){
+      @include font('QuicksandDash-Regular',6.5vw,normal,200,23vw);
+    }        
+  }
+  h6 {  
+    @include font('sinkinSans-Light',2.4vw,normal,normal,3.5vw); 
+    @include breakpoint(max-width 517px){  
+      @include font('sinkinSans-Light',4.4vw,normal,normal,9.5vw); 
+    }
+  }
+  .person, .code {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    @include browsers(transform, translate(0%,-50%));  
+  }
+  .contact, .cv {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    @include browsers(transform, translate(0%,-50%));      
+  }
+  .text-container {
+    position: absolute;
+    top: 50%;
+    @include browsers(transform, translate(0%,-50%));       
+  }
+  .container {
+    @include breakpoint(min-width 1312px){  
+      @include container(1200px);   
+      padding: 27px 0px;  
+    }
+    @include breakpoint(max-width 1311px){ 
+      @include container(950px);  
+      padding: 27px 0px;
+    }
+    @include breakpoint(max-width 517px){
+      @include container(100%); 
+      width: 100%; 
+      padding: 27px 15px;  
+    }
+    @include breakpoint(518px 675px){ 
+      @include container(95%); 
+    }
+    padding: 27px 15px;
+    height: 100%;  
+    box-sizing: border-box;    
+  }  
+  a {
+    text-decoration: none;
+    cursor: pointer; 
+  } 
+  .left,.right {
+   width: span(6);
+   float: left;
+   height: 100%;
+   box-sizing: border-box;     
+   position: relative;
+  }
+  overflow: hidden;
+  .section-1 {
+    color: $orange-dark;
+    background: $green-dark;
+    .left {
+      @include breakpoint(max-width 517px){ 
+        z-index: 2;
+        width: 100%;
+      }
+    }
+    .right {
+      @include breakpoint(max-width 517px){ 
+        z-index: 1;
+        width: 0%;  
+      }
+    }
+    .arrow {
+      @include breakpoint(max-width 517px){ 
+        z-index: 3;  
+      }
+      border: 2px solid $orange-dark;
+      &:before, &:after {
+        background: $orange-dark;  
+      }
+    }  
+  }
+  .section-2 {
+    color: $green-light;
+    background: $orange-dark;
+    .left {
+      @include breakpoint(max-width 517px){ 
+        z-index: 1;
+        width: 0%;
+      }
+    }
+    .right {
+      @include breakpoint(max-width 517px){ 
+        z-index: 2;
+        width: 100%;    
+      }
+    }    
+    .arrow {
+      @include breakpoint(max-width 517px){ 
+        z-index: 3;  
+      }        
+      border: 2px solid $green-light;
+      &:before, &:after {
+        background: $green-light;
+      }
+    }
+    .person-information {
+      text-align: center;  
+      a {
+        margin-right: 15px; 
+        display: inline-block;
+      }
+      svg {
+/*        @include breakpoint(max-width 1311px){ 
+          width: 59px;
+          height: 65px;
+        }  */
+        @include breakpoint(max-width 517px){ 
+          width: 40px;
+          height: 45px;
+        }  
+        @include breakpoint(518px 675px){
+          width: 30px;
+          height: 34px;  
+        }
+        width: 90px;
+        height: 95px;  
+      }
+    } 
+  }
+  .section-3 {
+    color: $yellow-dark;
+    background: $green-light;  
+    .left {
+      @include breakpoint(max-width 517px){ 
+        z-index: 2;
+        width: 100%;
+      }
+    }
+    .right {
+      @include breakpoint(max-width 517px){ 
+        z-index: 1;
+        width: 0%;  
+      }
+    }
+    .arrow {
+      @include breakpoint(max-width 517px){ 
+        z-index: 3;  
+      }
+      border: 2px solid $yellow-dark;
+      &:before, &:after {
+        background: $yellow-dark;
+      }
+    }
+  }
+  .section-4 {
+    color: $green-dark;
+    background: $yellow-dark;
+    .left {
+      @include breakpoint(max-width 517px){ 
+        z-index: 1;
+        width: 0%;
+      }
+    }
+    .right {
+      @include breakpoint(max-width 517px){ 
+        z-index: 2;
+        width: 100%;    
+      }
+    }    
+    .arrow {
+      @include breakpoint(max-width 517px){ 
+        z-index: 3;  
+      } 
+      bottom: 65px !important;
+      border: 2px solid $green-dark;  
+      @include browsers(animation, up-down-last 2s  infinite);  
+      &:before, &:after {
+        background: $green-dark;
+      }
+      &:before {
+        @include browsers(transform, rotate(-135deg));  
+        margin-top: 15px !important;
+        margin-left: 17px;      
+      }
+      &:after {
+        @include browsers(transform, rotate(135deg)); 
+        margin-left: 9px;  
+      }           
+    }
+    a {
+      color: $green-dark; 
+    }
+  }
+  .fix {
+    position: relative;
+    &:before, &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .copyright {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;  
+    @include font('Quicksand-Bold',1.3vw,normal,normal,normal); 
+    @include breakpoint(max-width 517px){
+      @include font('Quicksand-Bold',3.3vw,normal,normal,normal);
+    }      
+  } 
+  .content {
+    overflow: hidden;  
+  }
+  .arrow {
+    position: absolute;  
+    left: 50%;
+    transform: translate(-35%);
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    @include browsers(animation, up-down 2s  infinite);    
+    &:before, &:after {  
+      content: '';
+      display: inline-block; 
+      width: 3px;
+      height: 19px;
+      border-radius: 15px;
+    }
+    &:before{
+      @include browsers(transform, rotate(-45deg));  
+      margin-top: 17px;
+      margin-left: 17px;      
+    }
+    &:after {
+      @include browsers(transform, rotate(45deg)); 
+      margin-left: 9px;  
+    }    
+  }  
+}  

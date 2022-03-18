@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'devebug';
+  src: url(../fonts/devebug.eot?-ka99e0);
+  src: url(../fonts/devebug.eot?#iefix-ka99e0) format('embedded-opentype'), 
+    url(../fonts/devebug.woff?-ka99e0) format('woff'), 
+    url(../fonts/devebug.ttf?-ka99e0) format('truetype'), 
+    url(../fonts/devebug.svg?-ka99e0#devebug) format('svg');
+  font-weight: normal;
+  font-style: normal;
+    
+ 
+}
+@font-face {
+  font-family: 'sinkinSans-Light'; 
+  src: url(../fonts/sinkin-sans/SinkinSansLight.eot?-ka99e0);
+  src: url(../fonts/sinkin-sans/SinkinSansLight.eot?#iefix-ka99e0) format('embedded-opentype'), 
+    url(../fonts/sinkin-sans/SinkinSansLight.woff?-ka99e0) format('woff'), 
+    url(../fonts/sinkin-sans/SinkinSansLight.ttf?-ka99e0) format('truetype'), 
+    url(../fonts/sinkin-sans/SinkinSansLight.svg?-ka99e0#devebug) format('svg');
+  font-weight: 200;  
+  font-style: normal;   
+}
+@font-face {
+  font-family: 'sinkinSans-LightItalic';   
+  src: url(../fonts/sinkin-sans/SinkinSansLight.eot?-ka99e0);
+  src: url(../fonts/sinkin-sans/SinkinSansLight.eot?#iefix-ka99e0) format('embedded-opentype'), 
+    url(../fonts/sinkin-sans/SinkinSansLight.woff?-ka99e0) format('woff'), 
+    url(../fonts/sinkin-sans/SinkinSansLight.ttf?-ka99e0) format('truetype'), 
+    url(../fonts/sinkin-sans/SinkinSansLight.svg?-ka99e0) format('svg');
+  font-weight: normal;  
+  font-style: normal;   
+}    
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url(../fonts/Quicksand-Bold/Quicksand-Bold.eot); /* IE9 Compat Modes */
+  src: url(../fonts/Quicksand-Bold/Quicksand-Bold.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+    url(../fonts/Quicksand-Bold/Quicksand-Bold.otf) format("opentype"), /* Open Type Font */
+    url(../fonts/Quicksand-Bold/Quicksand-Bold.svg) format("svg"), /* Legacy iOS */
+    url(../fonts/Quicksand-Bold/Quicksand-Bold.ttf) format("truetype"), /* Safari, Android, iOS */
+    url(../fonts/Quicksand-Bold/Quicksand-Bold.woff) format("woff"), /* Modern Browsers */
+    url(../fonts/Quicksand-Bold/Quicksand-Bold.woff2) format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;  
+}
+/* font converted using font-converter.net. thank you! */
+@font-face { 
+  font-family: 'QuicksandDash-Regular';
+  src: url(../fonts/QuicksandDash-Regular/QuicksandDash.eot); /* IE9 Compat Modes */
+  src: url(../fonts/QuicksandDash-Regular/QuicksandDash.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+    url(../fonts/QuicksandDash-Regular/QuicksandDash.otf) format("opentype"), /* Open Type Font */
+    url(../fonts/QuicksandDash-Regular/QuicksandDash.svg) format("svg"), /* Legacy iOS */
+    url(../fonts/QuicksandDash-Regular/QuicksandDash.ttf) format("truetype"), /* Safari, Android, iOS */
+    url(../fonts/QuicksandDash-Regular/QuicksandDash.woff) format("woff"), /* Modern Browsers */
+    url(../fonts/QuicksandDash-Regular/QuicksandDash.woff2) format("woff2"); /* Modern Browsers */
+  font-weight: 200;
+  font-style: normal;
+}
